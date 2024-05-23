@@ -1,21 +1,18 @@
 class LargestSmallestNo{
     public static void main(String args[]){
-        int a[] = new int[]{7,8,9,4,2,8,5};
-        int n = a.length;
-        int s = 0 , l = 0;
-        for(int i = 0; i < n ; i++){
-            for(int j = i + 1; j < n ; j++){
-                if(a[i]<a[j]){
-                    s = a[i];
-                    l = a[j];
-                }
-                else{
-                    s = a[j];
-                    l = a[i];
+        int[] a = new int[]{5,6,7,1,3,9};
+        int n = a.length,temp = 0;
+        for(int i = 0;i<n;i++){
+            for(int j = i+1;j<n;j++){
+                if(a[j]<a[i]){
+                    temp = a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
                 }
             }
         }
-        System.out.println("The Smallest Value Of the Array is : " + s);
-        System.out.println("The Largest Value Of the Array is : " + l);
+        for(int i=0;i<n;i++){
+            System.out.println(a[i]);
+        }
     }
 }
