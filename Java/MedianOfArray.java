@@ -40,7 +40,7 @@ class MedianOfArray{
             else{
                 int second = p/2;
                 int first = second-1;
-                float div = (float)(c[first]+c[second])/2;
+                double div = (double)(c[first]+c[second])/2;
                 System.out.println("\nMedian Of The Array : "+div);
                 break;
             }
