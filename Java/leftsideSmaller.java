@@ -9,7 +9,6 @@ class leftsideSmaller{
                 temp = a[i];
             }
             else{
-                //System.out.println(a[i]);
                 temp = a[i];
             }
         }
